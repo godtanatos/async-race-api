@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <h1 class="title__header">Async Race Game</h1>
+      <img class="logo__header" src="../../../public/pngegg.png" alt="logo game">
+    </div>
+    <button type="button" class="btn header-garage-btn">garage</button>
+    <button type="button" class="btn header-winners-btn">winners</button>
+  </header>
+  <main id="garage-page">
+    <div class="forms-container">
+      <form class="form create-form" id="create-form">
+        <input class="input" id="create-name" name="name" type="text" required />
+        <input class="color" id="create-color" name="color" type="color" value="#ffffff" />
+        <button class="btn" type="submit">Create</button>
+      </form>
+      <form class="form update-form" id="update-form">
+        <input class="input" id="update-name" name="name" type="text" disabled required />
+        <input class="color" id="update-color" name="color" type="color" value="#ffffff" disabled />
+        <button class="btn" id="update-btn" type="submit" disabled>Update</button>
+      </form>
+    </div>
+    <ul class="controls-list">
+      <li class="item"><button class="btn race-btn" id="race">Race</button></li>
+      <li class="item"><button class="btn reset-btn" id="reset" disabled>Reset</button></li>
+      <li class="item"><button class="btn generate-btn" id="generate">Generate</button></li>
+    </ul>
+    <div id="garage" class="garage">${renderGarage()}</div>
+    <div>
+      <p class="win-message hidden" id="win-message"></p>
+    </div>
+  </main>
+
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+    html {
+      background-color: #bebfc1;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .header__wrapper {
+      display: flex;
+      align-items: baseline;
+    }
+
+    body {
+      padding: 10px;
+      background-color: ;
+    }
+
+    .logo__header {
+
+      height: 1.3rem;
+      width: 40px;
+    }
+
+    .title__header {
+      letter-spacing: 3px;
+      font-family: 'Faster One', cursive;
+      color: blue;
+      text-transform: uppercase;
+    }
+
+    /*button*/
+    .btn {
+      color: blue;
+      border: solid 2px #4b5156;
+      border-radius: 10px;
+      text-transform: uppercase;
+
+    }
+
+    .btn:hover {
+      cursor: pointer;
+    }
+
+    .controls-list {
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 0;
+    }
+
+    .controls-list .btn {
+      margin-right: 10px;
+    }
+  </style>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Faster+One&display=swap');
+
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+body {
+  padding: 10px;
+}
+
+.logo__header {
+
+  height: 1.3rem;
+  width: 40px;
+}
+
+.title__header {
+  letter-spacing: 3px;
+  font-family: 'Faster One', cursive;
+  color: blue;
+  text-transform: uppercase;
+}
+
+/*button*/
+.btn {
+  color: blue;
+  border: solid 2px #4b5156;
+  border-radius: 10px;
+  text-transform: uppercase;
+
+}
+
+.btn:hover,
+button {
+  cursor: pointer;
+}
+
+button:disabled,
+.btn:disabled {
+  cursor: auto;
+}
+
+.controls-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 0;
+}
+
+.controls-list .btn {
+  margin-right: 10px;
+}
+

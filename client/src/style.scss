@@ -1,0 +1,4 @@
+@import "../node_modules/normalize-scss/sass/_normalize.scss";
+@include normalize();
+@import "../src/components/base-style/style.scss";
+@import "../src/components/Car/style.scss";
